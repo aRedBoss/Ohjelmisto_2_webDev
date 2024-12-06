@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="/static/css/gameStyle.css">
+</head>
+<body>
+    <div id="gameContainer">
+        <div id="controls">
+            <button id="up">Up</button>
+            <div id="middleRow">
+                <button id="left">Left</button>
+                <img id="player" src="/static/img/AirPlain.png" alt="Player">
+                <button id="right">Right</button>
+            </div>
+            <button id="down">Down</button>
+        </div>
+        <div id="prompt">
+            <p id="message">Press the correct direction!</p>
+            <p id="countdown">Countdown: 3</p>
+        </div>
+        <div id="questionContainer" style="display: none;">
+            <p id="question"></p>
+            <div id="choices"></div>
+            <button id="submitAnswerButton">Submit Answer</button>
+        </div>
+        <div id="endGameMessage" style="display: none;">
+            <p id="endMessage"></p>
+            <button id="continueButton" style="display: none;">Continue</button>
+            <button id="replayButton" style="display: none;">Replay</button>
+            <button id="homeButton" style="display:none;">Go to Home</button>
+        </div>
+    </div>
+    <script src="/static/js/gameScript.js"></script>
+</body>
+</html>

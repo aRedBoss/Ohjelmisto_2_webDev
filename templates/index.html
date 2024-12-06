@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Game</title>
+    <link rel="stylesheet" href="/static/css/homeStyle.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
+</head>
+<body>
+    <div id="gameContainer">
+        <div id="bar">
+        <button id="storyButton">About the Game</button>
+        <div id="storyPopup" class="popup">
+            <div class="popup-content">
+                <span id="closePopup" class="close">&times;</span>
+                <h2>About the Game</h2>
+                <p>
+                    Your mission is clear: Stay calm,
+                    manage the plane, and answer each question accurately to reach your destination without any complications. 
+                    Every decision matters, and the right answer could be the key to keeping you on course. 
+                    Even if you answer wrongly, you will still learn and grow, preparing for the next challenge. 
+                    Good luck, pilot—your adventure has just begun.
+                </p>
+            </div>
+        </div>
+        <h1>Welcome to the Flight Simulator</h1>
+        </div>
+        <div id="instructions">
+            <p>Choose a destination on the map to view its weather. Once selected, click "Start Game" to begin your adventure!</p>
+        </div>
+        <div id="map"></div>
+        <div id="weather"></div>
+        <button id="startGame" style="display:none;">Start Game</button>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="/static/js/homeScript.js"></script>
+</body>
+</html>
