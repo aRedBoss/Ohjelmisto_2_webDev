@@ -170,7 +170,6 @@ function endGame(message) {
     if (currentLevel === 3) {
         continueButton.textContent = "Home";
         continueButton.style.display = 'inline-block';
-        replayButton.style.display = 'none';
     }
     else {
         continueButton.style.display = 'none';
