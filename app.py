@@ -3,7 +3,6 @@ from mysql.connector import connect
 import requests
 from geopy.distance import geodesic
 
-# Database connection
 yhteys = connect(
     host='localhost',
     port=3306,
@@ -26,8 +25,8 @@ def game():
 
 @app.route('/get_airports', methods=['GET'])
 def get_airports():
-    country_code = request.args.get('country_code')  # No default value
-    if not country_code:  # Check if country_code is not provided
+    country_code = request.args.get('country_code')
+    if not country_code:
         return jsonify({"error": "country_code parameter is required"}), 400
 
     airports = get_airport_list_with_coords()
@@ -38,7 +37,7 @@ def get_airports():
 def get_weather():
     lat = request.args.get('lat')
     lon = request.args.get('lon')
-    api_key = "785d33b81003cb7269fa3658e8e8b85f"  # Replace with your OpenWeatherMap API key
+    api_key = "785d33b81003cb7269fa3658e8e8b85f"
     weather_url = f"http://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={api_key}&units=metric"
     response = requests.get(weather_url)
     return jsonify(response.json())

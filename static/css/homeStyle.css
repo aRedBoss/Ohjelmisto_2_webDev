@@ -39,37 +39,35 @@ h1 {
 h2 {
     margin-bottom: 1rem;
 }
-/* Style the popup and overlay */
+
 #storyPopup {
-    display: none;  /* Hidden by default */
+    display: none;
     position: fixed;
     top: 0;
     left: 50%;
-    transform: translateX(-50%);  /* Center the popup horizontally */
+    transform: translateX(-50%);
     width: 80%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);  /* Darker overlay */
+    background-color: rgba(0, 0, 0, 0.8);
     justify-content: center;
     align-items: center;
     z-index: 1000;
 }
 
-/* Popup content style */
 .popup-content {
-    background-color: rgba(0, 0, 0, 0.85);  /* Dark background to match game theme */
-    color: #00ff99;  /* Use the same game accent color */
-    padding: 40px;  /* Larger padding for more space */
+    background-color: rgba(0, 0, 0, 0.85);
+    color: #00ff99;
+    padding: 40px;
     border-radius: 15px;
     width: 70%;
-    max-width: 600px;  /* Make the popup wider */
+    max-width: 600px; 
     text-align: center;
-    box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.5);  /* Light glow effect */
+    box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.5);
     position: relative;
-    font-size: 18px;  /* Adjust font size to be larger */
-    line-height: 1.5;  /* Better readability */
+    font-size: 18px;
+    line-height: 1.5;
 }
 
-/* Close button */
 .close {
     position: absolute;
     top: 10px;
@@ -79,21 +77,20 @@ h2 {
     cursor: pointer;
 }
 
-/* Story button style */
 #storyButton {
     position: fixed;
     left: 20px;
     top: 20px;
     background-color: #3c3f41;
     color: #00ff99;
-    padding: 10px 20px;  /* Smaller padding */
-    font-size: 16px;  /* Smaller font size */
+    padding: 10px 20px;
+    font-size: 16px;
     border: none;
     border-radius: 12px;
     cursor: pointer;
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.6);
     transition: background-color 0.3s ease, transform 0.2s ease-in-out;
-    z-index: 1001;  /* Ensure it's above other content */
+    z-index: 1001;
 }
 
 #storyButton:hover {
@@ -130,17 +127,15 @@ h2 {
     box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.5);
 }
 
-/* Style for the popup container */
 .popup-container {
     font-family: 'Arial', sans-serif;
     color: #333;
     padding: 10px;
-    background-color: rgba(0, 0, 0, 0.7);  /* Dark background for the popup */
+    background-color: rgba(0, 0, 0, 0.7);
     border-radius: 8px;
-    width: 250px;  /* Adjust based on your preference */
+    width: 250px;
 }
 
-/* Style for the airport name in the popup */
 .airport-name {
     font-size: 18px;
     font-weight: bold;
@@ -149,7 +144,6 @@ h2 {
     text-align: center;
 }
 
-/* Style for the "Choose" button */
 .choose-btn {
     background-color: #00ff99;
     color: #000;
@@ -172,24 +166,22 @@ h2 {
     transform: scale(0.95);
 }
 
-/* Optional: Change the default popup style */
 .leaflet-popup-content-wrapper {
     padding: 0;
     border-radius: 8px;
 }
 
 .leaflet-popup-tip {
-    background-color: rgba(0, 0, 0, 0.7); /* Change the triangle color if needed */
-}
-/* Style the zoom control container */
-.leaflet-control-zoom {
-    background-color: rgba(0, 0, 0, 0.6);  /* Semi-transparent background */
-    border-radius: 8px;  /* Round the corners */
-    padding: 10px;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8);  /* Add shadow for better visibility */
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
-/* Style the + button (zoom in) */
+.leaflet-control-zoom {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8);
+}
+
 .leaflet-control-zoom-in {
     background-color: #00ff99;
     color: #fff;
@@ -207,14 +199,12 @@ h2 {
     transition: background-color 0.3s ease, transform 0.2s ease-in-out;
 }
 
-/* Hover effect for + button */
 .leaflet-control-zoom-in:hover {
     background-color: #00b3b3;
     box-shadow: 0px 0px 15px rgba(0, 255, 255, 0.6);
     transform: scale(1.1);
 }
 
-/* Style the - button (zoom out) */
 .leaflet-control-zoom-out {
     background-color: #ff0033;
     color: #fff;
@@ -232,7 +222,6 @@ h2 {
     transition: background-color 0.3s ease, transform 0.2s ease-in-out;
 }
 
-/* Hover effect for - button */
 .leaflet-control-zoom-out:hover {
     background-color: #ff6666;
     box-shadow: 0px 0px 15px rgba(255, 0, 0, 0.6);
@@ -274,7 +263,6 @@ h2 {
     transform: scale(0.95);
 }
 
-/* Responsive Styles */
 @media (max-width: 768px) {
     h1 {
         font-size: 2.5em;
